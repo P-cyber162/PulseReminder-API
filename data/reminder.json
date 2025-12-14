@@ -1,0 +1,53 @@
+[
+  {
+  "_id": "693e3b95a672856c07d5c5b6",
+  "message": "Evening prayer",
+  "time": "2025-12-14T06:00:00.000Z",
+  "frequency": "daily",
+  "userId": "64f0c1a2b3c4d5e6f7a8b9c0"
+  },
+  {
+    "_id": "665b1000aa11111111111111",
+    "userId": "665a1111a1b2c3d4e5f60001",
+    "message": "Morning prayer",
+    "time": "2025-12-15T06:30:00.000Z",
+    "frequency": "daily"
+  },
+  {
+    "_id": "665b1000aa22222222222222",
+    "userId": "665a1111a1b2c3d4e5f60001",
+    "message": "Drink water",
+    "time": "2025-12-15T07:00:00.000Z",
+    "frequency": "interval-10m"
+  },
+
+  {
+    "_id": "665b1000aa33333333333333",
+    "userId": "665a2222a1b2c3d4e5f60002",
+    "message": "Team stand-up meeting",
+    "time": "2025-12-15T09:00:00.000Z",
+    "frequency": "weekly"
+  },
+  {
+    "_id": "665b1000aa44444444444444",
+    "userId": "665a2222a1b2c3d4e5f60002",
+    "message": "Take vitamins",
+    "time": "2025-12-15T07:30:00.000Z",
+    "frequency": "daily"
+  },
+
+  {
+    "_id": "665b1000aa55555555555555",
+    "userId": "665a3333a1b2c3d4e5f60003",
+    "message": "Evening meditation",
+    "time": "2025-12-15T19:00:00.000Z",
+    "frequency": "once"
+  },
+  {
+    "_id": "665b1000aa66666666666666",
+    "userId": "665a3333a1b2c3d4e5f60003",
+    "message": "Monthly fasting reminder",
+    "time": "2025-12-20T06:00:00.000Z",
+    "frequency": "monthly"
+  }
+]

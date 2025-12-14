@@ -1,0 +1,216 @@
+{
+	"info": {
+		"_postman_id": "dc9d47df-14f0-4288-a39b-337f9e591cb9",
+		"name": "Pulse Reminder API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "49010749",
+		"_collection_link": "https://anakwaprince204-9892628.postman.co/workspace/Prince-Anakwa's-Workspace~ca5f0e1c-8655-4421-84cb-a10bee3ccaf2/collection/49010749-dc9d47df-14f0-4288-a39b-337f9e591cb9?action=share&source=collection_link&creator=49010749"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "User Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"faithful.user@example.com\",\r\n    \"password\": \"SecurePass123!\"\r\n}\r\n\r\n\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "127.0.0.1:3000/api/v1/auth/login"
+					},
+					"response": []
+				},
+				{
+					"name": "User Signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"faithful_user\",\r\n    \"email\": \"faithful.user@example.com\",\r\n    \"password\": \"SecurePass123!\",\r\n    \"confirmPassword\": \"SecurePass123!\"\r\n}\r\n\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "127.0.0.1:3000/api/v1/auth/signup"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reminders",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"faithful.user@example.com\",\r\n    \"password\": \"SecurePass123!\"\r\n}\r\n\r\n\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "127.0.0.1:3000/api/v1/auth/login"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Reminders",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2UyNWM5ZTAyMDg0MTU0YTI2NTJjYiIsImlhdCI6MTc2NTY4MjYyNywiZXhwIjoxNzY1Njg5ODI3fQ.hNa-LGJLqlNPXw1Imjz-HPEXtIApXVVXzh-CC7381dg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"faithful.user@example.com\",\r\n    \"password\": \"SecurePass123!\"\r\n}\r\n\r\n\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "127.0.0.1:3000/api/v1/reminders"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Reminder",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2U0MjA4ZGFhNzAzMWUxZWM0ZTRlYyIsImlhdCI6MTc2NTY4NzkxNywiZXhwIjoxNzY1Njk1MTE3fQ.mi8iTY8k4FRt3gez9nK22XoacfnhKFI8Pm_imGmpdSI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"_id\": \"693e3b95a672856c07d5c5b6\",\r\n  \"message\": \"Evening prayer\",\r\n  \"time\": \"2025-12-14T06:00:00.000Z\",\r\n  \"frequency\": \"daily\",\r\n  \"userId\": \"64f0c1a2b3c4d5e6f7a8b9c0\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "127.0.0.1:3000/api/v1/reminders/693e4287daa7031e1ec4e4f2"
+					},
+					"response": []
+				},
+				{
+					"name": "Create reminder",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2U0MjA4ZGFhNzAzMWUxZWM0ZTRlYyIsImlhdCI6MTc2NTY4NzkxNywiZXhwIjoxNzY1Njk1MTE3fQ.mi8iTY8k4FRt3gez9nK22XoacfnhKFI8Pm_imGmpdSI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"_id\": \"693e3b95a672856c07d5c5b6\",\r\n  \"message\": \"Evening prayer\",\r\n  \"time\": \"2025-12-14T06:00:00.000Z\",\r\n  \"frequency\": \"daily\",\r\n  \"userId\": \"64f0c1a2b3c4d5e6f7a8b9c0\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "127.0.0.1:3000/api/v1/reminders/693e4287daa7031e1ec4e4f2"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Reminder",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2U0MjA4ZGFhNzAzMWUxZWM0ZTRlYyIsImlhdCI6MTc2NTY4NzkxNywiZXhwIjoxNzY1Njk1MTE3fQ.mi8iTY8k4FRt3gez9nK22XoacfnhKFI8Pm_imGmpdSI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"message\": \"Evening meditation\",\r\n  \"time\": \"2025-12-14T19:00:00.000Z\",\r\n  \"frequency\": \"daily\"\r\n}\r\n\r\n\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "127.0.0.1:3000/api/v1/reminders/693e4deaaa0bae8954076b71"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Reminder",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2U0MjA4ZGFhNzAzMWUxZWM0ZTRlYyIsImlhdCI6MTc2NTY5MTU3OCwiZXhwIjoxNzY1Njk4Nzc4fQ.-ykLsqJ9PWLyMMYryPnihL3qYFg-6QyixXWQATruF8A",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "127.0.0.1:3000/api/v1/reminders/693e4deaaa0bae8954076b71"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
